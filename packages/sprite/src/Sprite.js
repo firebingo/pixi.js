@@ -261,6 +261,9 @@ export default class Sprite extends Container
         const trim = texture.trim;
         const orig = texture.orig;
         const anchor = this._anchor;
+		if(orig == undefined) {
+			return;
+		}
 
         let w0 = 0;
         let w1 = 0;
